@@ -1,5 +1,7 @@
 package com.example.springboot_crud.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
@@ -23,5 +25,21 @@ public class Employeeservice {
 	{
 		
 		return ed.deletionData(id);
+	}
+	
+	public Employee fetchById(int id)
+	{
+		return ed.fetchById(id);
+	}
+	
+	public List<Employee> fetchbyAll()
+	{
+		return ed.fetchbyAll();
+	}
+	
+	public String deletebyAll()
+	{
+		
+		return ed.deletebyAll();
 	}
 }
